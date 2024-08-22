@@ -12,6 +12,9 @@ void display(){
     cout << "\n";
 }
 void push(int n){
+    if(top == size -1)
+        cout << "Overflow, Stack is Fulled";
+    else
     arr[++top] = n; // Push Operation
     display();
 }
